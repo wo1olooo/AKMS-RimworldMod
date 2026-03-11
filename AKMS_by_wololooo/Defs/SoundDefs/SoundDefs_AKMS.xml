@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SoundDef>
+    <defName>wololooo_akms_firing_sound</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/wololooo_AKMS_Firing_Sound</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>40</min>
+          <max>40</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.88</min>
+          <max>0.94</max>
+        </pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

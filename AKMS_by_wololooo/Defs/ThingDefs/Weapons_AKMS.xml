@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_AKMS_wololooo</defName>
+    <label>AKMS</label>
+
+    <description>The question was simple: how does a paratrooper exit an aircraft with a full-length rifle?
+
+The AKM's fixed wooden stock was thirty centimeters of dead length when the rifle wasn't shouldered. In an aircraft, a vehicle, a confined space — thirty centimeters was the difference between a weapon and an obstacle. Soviet airborne doctrine demanded a solution.
+
+The AKMS replaced the fixed stock with a downward-folding metal skeleton. Deployed, it handles identically to the AKM. Folded, the rifle shortens by a third. The click of the stock locking open is the sound of a paratroop rifle becoming a full-length one — a conversion that takes less than a second and costs nothing.
+
+It carries the same 7.62x39mm round as the AKM, the AK-47, and the SKS. Nothing about the action, the gas system, or the feeding was changed. The only difference is that it fits through a hatch.
+
+On the Rim, hatches are everywhere. Raider transports, mine shafts, crawlspaces in collapsed infrastructure — the AKMS answers every one of them without asking you to choose between reach and access.
+
+The Krasnaya Zvezda filed the AKMS last in the archive. The final weapon in a lineage that began with Fyodorov's Avtomat on the fields of a forgotten war, passed through Simonov and Tokarev and Sudayev, and ended here — in airborne doctrine and folding steel.
+
+Whatever the Soviets built after this, the archive doesn't have it.
+
+~wololooo
+    </description>
+
+    <graphicData>
+      <texPath>Things/Equipment/wololooo_AKMS</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.20</drawSize>
+    </graphicData>
+
+    <soundInteract>Interact_Rifle</soundInteract>
+
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <researchPrerequisite>Research_AKMS_by_wololooo</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>446</displayPriority>
+    </recipeMaker>
+
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+
+    <statBases>
+      <WorkToMake>42000</WorkToMake>
+      <Mass>3.6</Mass>
+      <AccuracyTouch>0.74</AccuracyTouch>
+      <AccuracyShort>0.74</AccuracyShort>
+      <AccuracyMedium>0.63</AccuracyMedium>
+      <AccuracyLong>0.44</AccuracyLong>
+      <RangedWeapon_Cooldown>1.55</RangedWeapon_Cooldown>
+      <MarketValue>610</MarketValue>
+      <MaxHitPoints>80</MaxHitPoints>
+    </statBases>
+
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <WoodLog>5</WoodLog>
+    </costList>
+
+    <smeltable>true</smeltable>
+    <smeltProducts>
+      <Steel>50</Steel>
+    </smeltProducts>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_AKMS_762x39mm</defaultProjectile>
+        <warmupTime>0.95</warmupTime>
+        <range>27.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+        <soundCast>wololooo_akms_firing_sound</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AKMS</li>
+      <li>wololoooSovietPack</li>
+    </weaponTags>
+
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities><li>Blunt</li></capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+
+    <comps>
+      <li Class="CompProperties_Biocodable" />
+    </comps>
+
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_AKMS_762x39mm</defName>
+    <label>7.62×39mm M43 AKMS bullet</label>
+
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <speed>75</speed>
+      <stoppingPower>1.3</stoppingPower>
+      <armorPenetrationBase>0.22</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+</Defs>

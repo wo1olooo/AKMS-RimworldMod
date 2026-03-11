@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>Research_AKMS_by_wololooo</defName>
+    <label>AKMS</label>
+    <description>The AKMS is the AKM with a downward-folding metal skeleton stock developed for Soviet paratroopers and armored vehicle crews. Light, fast, and compact. The folding stock trades long-range accuracy for speed and maneuverability.
+
+~wololooo
+    </description>
+
+    <tab>SovietGuns_by_wololooo</tab>
+
+    <baseCost>3600</baseCost>
+    <techLevel>Industrial</techLevel>
+
+    <prerequisites>
+      <li>Gunsmithing</li>
+      <li>PrecisionRifling</li>
+      <li>Soviet_Research_Program</li>
+      <li>Soviet_Assault_Rifle_Program</li>
+      <li>Soviet_Assault_Rifle_Program</li>
+      <li>Research_AKM_by_wololooo</li>
+    </prerequisites>
+
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+
+    <researchViewX>10</researchViewX>
+    <researchViewY>0</researchViewY>
+
+  </ResearchProjectDef>
+
+</Defs>
